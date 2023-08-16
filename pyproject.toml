@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "hw-wab-m12"
+version = "0.1.0"
+description = ""
+authors = ["Makss2022 <maximkhersonua@gmail.com>"]
+readme = "README.md"
+packages = [{ include = "hw_wab_m12" }]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+uvicorn = { extras = ["standard"], version = "^0.22.0" }
+sqlalchemy = "^2.0.15"
+psycopg2 = "^2.9.6"
+alembic = "^1.11.1"
+pydantic = "^1.10.7"
+fastapi = { extras = ["all"], version = "^0.95.2" }
+libgravatar = "^1.0.4"
+python-jose = {extras = ["cryptography"], version = "^3.3.0"}
+passlib = {extras = ["bcrypt"], version = "^1.7.4"}
+python-multipart = "^0.0.6"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
